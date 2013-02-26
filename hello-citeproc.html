@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="xmldom.js"></script>
+	<script type="text/javascript; e4x=1" src="xmle4x.js"></script>
+	<script type="text/javascript" src="citeproc.js"></script>
+	<script type="text/javascript" src="helloword-citeproc.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<div id="content"></div>
+	<br>
+	<button id="go">Go</button>
+	<script type="text/javascript">
+	$('#go').click(function() {
+		$('#content').html(get_formatted_citation() + "<br>" + get_formatted_bib())
+	});
+	</script>
+</body>
+</html>
